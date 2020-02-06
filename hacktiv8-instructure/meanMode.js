@@ -23,7 +23,7 @@ function  MeanMode(arr) {
     const frequency = {};
     let maxFreq = 0;
     let mode = 0;
-    for (let i in arr) {
+    for (let i=0; i<arr.length;i++) {
       frequency[arr[i]] = (frequency[arr[i]] || 0) + 1;
       if (frequency[arr[i]] > maxFreq) {
         maxFreq = frequency[arr[i]];
